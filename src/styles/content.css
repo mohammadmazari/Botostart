@@ -1,0 +1,102 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
+  overflow: visible;
+}
+
+.content section:first-child {
+  max-width: 900px;
+  height: fit-content;
+}
+.content .list-introduction {
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+.content .list-introduction ul {
+  border: 1px var(--global-color) dashed;
+  list-style: none;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400px;
+  border-radius: 7px;
+  background-color: #fff;
+}
+.content .list-introduction ul li {
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.content .list-introduction ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.content .introduction h2 {
+  margin-top: 40px;
+  font-size: 28px;
+  color: var(--text-color);
+}
+.content .introduction p {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-color);
+  text-align: justify;
+  line-height: 40px;
+}
+
+.content .bot-registration {
+  width: 353px;
+  height: 274px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 30px;
+  border: 1px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgb(217, 216, 216);
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+}
+
+.content .bot-registration h3 {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.content .bot-registration p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 30px;
+  color: var(--text-color) !;
+}
+
+.content .bot-registration p:first-child {
+  margin-top: 60px;
+  color: #5c5c5c !important;
+}
+.content .bot-registration p span,
+.content .bot-registration p del {
+  font-weight: 700;
+}
+.content .bot-registration .bot-price {
+  color: var(--global-color) !important;
+}
+.content .bot-registration button {
+  margin-top: 20px;
+  background-color: var(--global-color);
+  border-radius: 10px;
+  width: 312px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}

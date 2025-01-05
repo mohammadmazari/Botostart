@@ -1,0 +1,71 @@
+.bot-aboutus {
+  margin-top: 80px;
+}
+.bot-aboutus h3 {
+  padding: 20px;
+  color: var(--text-color);
+  font-size: 28px;
+}
+.bot-aboutus .bot-aboutus-info {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+.bot-aboutus .aboutus-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 375px;
+  position: relative;
+}
+.bot-aboutus .aboutus-img img {
+  width: 270px;
+  height: 370px;
+  border-radius: 10px;
+}
+.bot-aboutus .aboutus-info {
+  width: 50%;
+}
+.bot-aboutus .aboutus-info div:nth-child(1) > p {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 23px;
+}
+.bot-aboutus .aboutus-info div:nth-child(1) > span {
+  font-weight: 300 !important;
+  font-size: 17px;
+}
+.bot-aboutus .aboutus-info div:nth-child(2) > p {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 40px;
+  text-align: justify;
+  margin-top: 12px;
+}
+.bot-aboutus .aboutus-img .aboutus-info-arrow,
+.bot-aboutus .aboutus-img .aboutus-info-point1,
+.bot-aboutus .aboutus-img .aboutus-info-point2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -10;
+}
+.bot-aboutus .aboutus-img .aboutus-info-point1,
+.bot-aboutus .aboutus-img .aboutus-info-point2 {
+  width: 90px;
+  height: 100px;
+}
+.bot-aboutus .aboutus-img .aboutus-info-arrow {
+  width: 390px;
+  height: 400px;
+  top: -20px;
+}
+.bot-aboutus .aboutus-img .aboutus-info-point1 {
+  top: 250px;
+  left: 0px;
+}
+.bot-aboutus .aboutus-img .aboutus-info-point2 {
+  top: 300px;
+  right: 0px;
+}

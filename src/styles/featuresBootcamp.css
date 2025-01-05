@@ -1,0 +1,46 @@
+.bot-features {
+  margin-top: 80px;
+  max-width: 700px;
+  display: flex;
+  height: fit-content;
+}
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.title > p > span {
+  color: #886ff3;
+}
+.content .bot-features-boxs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  height: fit-content;
+}
+.content .features-box {
+  width: 215px;
+  height: 232px;
+  text-align: center;
+  border-radius: 16px;
+  background-color: #fff;
+  padding: 8px;
+  box-shadow: 0px 0px 10px rgb(220, 219, 219);
+}
+.content .features-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.content .features-box > h2 {
+  font-weight: 700;
+  font-size: 14px;
+}
+.content .features-box > p {
+  font-size: 13px;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 10px;
+}

@@ -1,0 +1,56 @@
+@import "./botHeader.css";
+@import "./content.css";
+@import "./featuresBootcamp.css";
+@import "./accordionMenu.css";
+@import "./btoPrograms.css";
+@import "./aboutUs.css";
+@import "./mediaScreen.css";
+
+/* fonts */
+
+@import "./YcanBakh.css";
+:root {
+  --global-color: #8a6ef8;
+  --text-color: #282828;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+button {
+  font-family: YcanBakh;
+  border: none;
+}
+
+body {
+  font-family: YcanBakh;
+  max-width: 1250px;
+  margin: 0px auto;
+  direction: rtl;
+  padding: 10px 15px;
+}
+
+.container {
+  border-radius: 64px;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgb(228, 225, 225);
+  margin-top: 20px;
+}
+
+.active {
+  color: var(--global-color) !important;
+  position: relative;
+  transition: all 0.8s;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--global-color);
+}

@@ -1,0 +1,56 @@
+.accordion {
+  width: 100%;
+  margin-top: 70px;
+  background-color: #8a6ef8;
+  color: #fff;
+  padding: 30px 50px;
+  border-radius: 25px;
+}
+.accordion .accordion-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.accordion .accordion-title img {
+  width: 48px;
+  height: 52px;
+}
+.accordion .accordion-title p {
+  font-size: 28px;
+  font-weight: 500;
+}
+.accordion .accordion-menu {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 25px;
+  color: black;
+  margin-top: 15px;
+}
+.accordion .accordion-menu details summary {
+  font-size: 22px;
+  color: #8a6ef8;
+  direction: rtl;
+}
+.accordion details {
+  position: relative;
+  overflow: hidden;
+}
+.accordion summary {
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+  padding-left: 20px;
+}
+.accordion summary::before {
+  content: url("../images/arrow-down\ \(1\).svg");
+  position: absolute;
+  left: 0;
+  top: 65%;
+  transform: translateY(-50%);
+}
+.accordion details[open] summary::before {
+  content: url("../images/arrow-down.svg");
+}
+.accordion details ul {
+  padding: 10px 30px;
+}

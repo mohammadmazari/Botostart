@@ -1,0 +1,36 @@
+.bot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .bot-header .bot-header-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .bot-header .bot-header-right h1 {
+    color: var(--global-color);
+    font-size: 48px;
+  }
+  .bot-header .bot-header-right p {
+    color: #282828;
+    font-weight: 400;
+    font-size: 28px;
+  }
+  .bot-header .bot-header-right button {
+    width: 257px;
+    height: 58px;
+    border-radius: 10px;
+    background-color: var(--global-color);
+    color: #fff;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .bot-header .bot-header-left img {
+    width: 477px;
+    height: 477px;
+  }
+  .bot-header .bot-header-right img {
+    display: none;
+  }
+  

@@ -1,3 +1,8 @@
+@media (max-width: 1120px) {
+  .wrapper {
+    max-width: 500px;
+  }
+}
 @media (max-width: 970px) {
   .container {
     padding: 20px 0px !important;
@@ -128,6 +133,17 @@
   .bot-aboutus .bot-aboutus-info .aboutus-info {
     width: 80%;
   }
+  /************************ slider ************************/
+  .wrapper {
+    max-width: 100% !important;
+  }
+  .title-slider {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 3));
+  }
 }
 
 @media (max-width: 680px) {
@@ -183,7 +199,7 @@
     z-index: 100 !important;
   }
   .content section:last-child .bot-registration p {
-    font-size: 11px;
+    font-size: 12px;
   }
   .content section:last-child .bot-registration button {
     width: 140px;
@@ -205,7 +221,7 @@
     font-size: 13px;
   }
   .content .introduction p {
-    font-size: 9.5px;
+    font-size: 12px;
   }
 
   .container .title {
@@ -213,7 +229,7 @@
   }
   /*********************** accordion menu and Features of Bootcamp ************************/
   .container .bot-features .title p {
-    font-size: 13px;
+    font-size: 14px;
   }
   .container .content .bot-features-boxs {
     width: 100% !important;
@@ -231,14 +247,14 @@
     font-size: 10px;
   }
   .container .content .bot-features-boxs p {
-    font-size: 9px;
+    font-size: 12px;
     font-weight: 400;
   }
   .container .content .bot-features-boxs:last-child > h2 {
     font-size: 12px;
   }
   .container .content .bot-features-boxs:last-child > p {
-    font-size: 9px;
+    font-size: 12px;
   }
   .accordion .accordion-title p {
     font-size: 20px;
@@ -277,7 +293,7 @@
     font-size: 13px !important;
   }
   .bot-program .bot-program-box p {
-    font-size: 10px !important;
+    font-size: 12px !important;
   }
   .bot-program .bot-program-box:nth-child(2) {
     transform: translatex(30px) !important;
@@ -320,7 +336,7 @@
     top: 275px;
     right: 20px;
   }
-  
+
   .bot-aboutus .bot-aboutus-info {
     margin-top: 10px;
   }
@@ -328,6 +344,29 @@
     font-size: 16px;
   }
   .bot-aboutus .aboutus-info div:nth-child(2) > p {
-    font-size: 10px;
+    font-size: 12px;
+  }
+  /************************ slider ************************/
+  .wrapper {
+    max-width: 100%;
+    height: 270px;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2));
+  }
+  .title-slider {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .wrapper .carousel .card-item p {
+    font-size: 0.7rem;
+  }
+  .wrapper .carousel .card-item span{
+    font-size: 0.6rem;
+    margin-top: 8px
+  };
+  .wrapper .carousel .card-item .card-img {
+    width: 100px;
+    height: 100px;
   }
 }

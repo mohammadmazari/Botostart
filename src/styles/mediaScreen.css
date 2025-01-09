@@ -144,6 +144,15 @@
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 3));
   }
+  .accordion-content p {
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  .fot-accordion-item button {
+    font-size: 24px ;
+    color: var(--text-color);
+  }
 }
 
 @media (max-width: 680px) {
@@ -361,12 +370,21 @@
   .wrapper .carousel .card-item p {
     font-size: 0.7rem;
   }
-  .wrapper .carousel .card-item span{
+  .wrapper .carousel .card-item span {
     font-size: 0.6rem;
-    margin-top: 8px
-  };
+    margin-top: 8px;
+  }
   .wrapper .carousel .card-item .card-img {
     width: 100px;
     height: 100px;
+  }
+  .accordion-content p {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--text-color);
+  }
+  .fot-accordion-item button {
+    font-size: 13px ;
+    color: var(--text-color);
   }
 }

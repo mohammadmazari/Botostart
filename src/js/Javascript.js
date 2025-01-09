@@ -1,8 +1,10 @@
 const list_introduction = document.querySelectorAll(
   ".list-introduction ul li a"
 );
+// const togglearrow = document.querySelectorAll(".toggle-arrow");
+const toggleBtn = document.querySelectorAll(".toggle-btn");
 const carousel = document.querySelector(".carousel");
-
+console.log(toggleBtn);
 const addclassname = (item) => {
   // toggle active class
   list_introduction.forEach((e) => {
@@ -58,4 +60,36 @@ const swiper = new Swiper(".swiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+// Traded quotations
+const accordionHeaders = document.querySelectorAll(".accordion-header");
+accordionHeaders.forEach((header) => {
+  header.addEventListener("click", () => {
+    const content = header.nextElementSibling;
+    const icon = header.querySelector(".icon");
+
+    // Toggle current item
+    if (content.classList.contains("open")) {
+      content.classList.remove("open");
+      content.style.maxHeight = "0";
+      icon.classList.remove("open");
+    } else {
+      // Close other open items
+      document
+        .querySelectorAll(".accordion-content.open")
+        .forEach((openContent) => {
+          openContent.classList.remove("open");
+          openContent.style.maxHeight = "0";
+          openContent.previousElementSibling
+            .querySelector(".icon")
+            .classList.remove("open");
+        });
+
+      // Open the clicked item
+      content.classList.add("open");
+      content.style.maxHeight = `${content.scrollHeight}px`;
+      icon.classList.add("open");
+    }
+  });
 });

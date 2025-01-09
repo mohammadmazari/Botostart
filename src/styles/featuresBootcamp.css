@@ -39,8 +39,9 @@
   font-size: 14px;
 }
 .content .features-box > p {
-  font-size: 13px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 300;
   text-align: justify;
   margin-top: 10px;
+  color: var(--text-color);
 }
